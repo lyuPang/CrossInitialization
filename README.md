@@ -1,6 +1,6 @@
 # Cross Initialization
 
-**Official Implementation of "Cross Initialization for Personalized Text-to-Image Generation"**
+**Official Implementation of "Cross Initialization for Personalized Text-to-Image Generation".**
 
 We will release the code soon.
 

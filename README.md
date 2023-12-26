@@ -5,5 +5,5 @@
 We will release the code soon.
 
 ## Results
-<img src='assets/teaser.pdf'>
+<img src='assets/teaser.png'>
 

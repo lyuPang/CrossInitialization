@@ -7,3 +7,4 @@ We will release the code soon.
 ## Results
 <img src='assets/teaser.png'>
 
+<img src='assets/CI.jpg'>

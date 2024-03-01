@@ -13,6 +13,8 @@ Official Implementation of "Cross Initialization for Personalized Text-to-Image 
 
 ## Setup
 Our code mainly bases on [Diffusers-Textual Inversion](https://github.com/huggingface/diffusers/tree/main/examples/textual_inversion) and relies on the [diffusers](https://github.com/huggingface/diffusers) library.
+
+To set up the environment, please run:
 ```
 conda create -n ci python=3.10
 conda activate ci
@@ -22,12 +24,12 @@ pip install -r requirements.txt
 
 ## Dataset
 ### Image Dataset
-CelebA can be downloaded from [here](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
+We use CelebA dataset to test our method, which can be downloaded from [here](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
 
-We also provide some images for testing in `./examples/input_images`, which are from CelebA.
+We also provide some images for testing in `./examples/input_images`, which are also from CelebA.
 
 ### Celeb Name Dataset
-Celeb names used in this project are from [Celeb Basis](https://github.com/ygtxr1997/CelebBasis/tree/main). We are very grateful for their contributions.
+The Celeb names `./examples/wiki_names_v2.txt` used in this project are from [Celeb Basis](https://github.com/ygtxr1997/CelebBasis/tree/main). We are very grateful for their contributions.
 
 ## Usage
 
@@ -36,7 +38,7 @@ Celeb names used in this project are from [Celeb Basis](https://github.com/ygtxr
 ### Logging into Huggingface
 To use `stabilityai/stable-diffusion-2-1-base` model, you may have to log into Huggingface as following
 
-+ Use `huggingface-cli` login in Terminal
++ Use `huggingface-cli` to login in Terminal
 + Input your token extracted from [Token](https://huggingface.co/settings/tokens)
 
 ### Training
@@ -86,7 +88,7 @@ python test_cross_init.py \
 + The generated images will be saved to the path `{save_dir}/{prompt}`
 
 ## Metrics
-We use the same evaluation protocol as used in Celeb Basis.
+We use the same evaluation protocol as used in [Celeb Basis](https://github.com/ygtxr1997/CelebBasis/tree/main).
 
 ## Results of Our Fast Version
 The following results are obtained after 25 optimization steps, each image taking 26 seconds on an A800 GPU.

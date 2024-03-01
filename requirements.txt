@@ -1,0 +1,6 @@
+diffusers[torch]==0.21.2
+accelerate==0.20.3
+torchvision
+transformers==4.25.1
+ftfy
+Jinja2

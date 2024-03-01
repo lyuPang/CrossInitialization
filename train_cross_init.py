@@ -36,7 +36,7 @@ from packaging import version
 from PIL import Image
 from tqdm.auto import tqdm
 from transformers import CLIPTokenizer
-from modules.clip_model import CLIPTextModel
+from models.clip_model import CLIPTextModel
 
 import diffusers
 from diffusers import (

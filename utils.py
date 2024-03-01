@@ -1,4 +1,4 @@
-from modules.clip_model import CLIPTextModel
+from models.clip_model import CLIPTextModel
 from transformers import CLIPTokenizer
 from tqdm import tqdm
 import torch
@@ -15,7 +15,7 @@ def celeb_names_cross_init(
     ):
     with open(celeb_path, 'r') as f:
         celeb_names=f.read().splitlines()
-    ''' get embeddings '''
+    # get embeddings
     col_embeddings=[[]for _ in range(n_column)]
     for name in tqdm(celeb_names,desc='get embeddings'):
         token_ids=tokenizer(

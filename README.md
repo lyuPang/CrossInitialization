@@ -29,7 +29,7 @@ We use CelebA dataset to test our method, which can be downloaded from [here](ht
 We also provide some images for testing in `./examples/input_images`, which are also from CelebA.
 
 ### Celeb Name Dataset
-The Celeb names `./examples/wiki_names_v2.txt` used in this project are from [Celeb Basis](https://github.com/ygtxr1997/CelebBasis/tree/main). We are very grateful for their contributions.
+The Celeb names in `./examples/wiki_names_v2.txt` used in this project are from [Celeb Basis](https://github.com/ygtxr1997/CelebBasis/tree/main). We are very grateful for their contributions.
 
 ## Usage
 
@@ -86,6 +86,8 @@ python test_cross_init.py \
     ```
 + The identity placement should be specified using `{}`, and we will replace `{}` with the identity's placeholder token that is saved in the learned embedding checkpoint.
 + The generated images will be saved to the path `{save_dir}/{prompt}`
+
+Please refer to `test_cross_init.py` for more details on all parameters.
 
 ## Metrics
 We use the same evaluation protocol as used in [Celeb Basis](https://github.com/ygtxr1997/CelebBasis/tree/main).

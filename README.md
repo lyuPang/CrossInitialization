@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ## Dataset
 ### Image Dataset
-We use CelebA dataset to test our method, which can be downloaded from [here](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
+We use CelebA dataset to test our method, which can be downloaded from [here](https://github.com/switchablenorms/CelebAMask-HQ).
 
 We also provide some images for testing in `./examples/input_images`, which are also from CelebA.
 
